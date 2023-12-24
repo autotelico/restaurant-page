@@ -13,9 +13,9 @@
     <header>
         <nav id="header">
             <ul>
-                <li>Home</li>
-                <li>Menu</li>
-                <li>Contact</li>
+                <li data-tab-target='#home'>Home</li>
+                <li data-tab-target="#menu">Menu</li>
+                <li data-tab-target="#contact">Contact</li>
             </ul>
         </nav>
     </header>
@@ -26,9 +26,15 @@
         <h1>Il Ragazzino Restaurant</h1>
         <p>Love yourself some Italian food? Then check out our options!</p>
 
-        <div id="food1"></div>
-        <div id="food2"></div>
-        <div id="food3"></div>
+        <div class='food-div' id="food1">
+            <img src="../src/images/tiramisu.jpg" alt="Lasagna">
+        </div>
+        <div class='food-div' id="food2">
+            <img src="../src/images/pizza-napoletana.jpg" alt="">
+        </div>
+        <div class='food-div' id="food3">
+            <img src="../src/images/lasagna.jpg" alt="">
+        </div>
     </div>
 </body>
 </html>
