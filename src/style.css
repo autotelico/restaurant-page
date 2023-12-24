@@ -3,21 +3,43 @@
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
+body {
+    background-color: brown;
+}
+
 #header {
     position: relative;
     color: #fff;
     background-color: green;
     height: 100px;
+    font-size: 48px;
+}
+
+#header .header-option {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 100%;
+    cursor: pointer;
+    background-color: inherit;
+    transition: .4s background-color;
+}
+
+#header .header-option:hover {
+    background-color: lightgreen;
+    transition: .4s all;
 }
 
 #header ul {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 250px;
+    /* gap: 250px; */
     position: relative;
     top: 50%;
     transform: translateY(-50%);
+    height: 100%;
 }
 
 #header li {
@@ -27,18 +49,25 @@
 /* There should be content for when a list item is clicked */
 
 #content {
+    color: #fff;
+    font-size: 24px;
     margin: 0 auto;
-    width: 40vw;
-    height: auto;
+    width: 900px;
+    height: max-content;
     background-color: blue;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 30px;
+    gap: 200px;
 }
 
 #content h1 {
     font-size: 40px;
+}
+
+#content p {
+    margin-top: 20px;
+    /* width: 50%; */
 }
 
 #content .food-div {
