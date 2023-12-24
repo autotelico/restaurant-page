@@ -1,5 +1,6 @@
 :root{
-    --food-box-height: 200px;
+    --food-box-height: 300px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 #header {
@@ -23,30 +24,30 @@
     list-style-type: none;
 }
 
+/* There should be content for when a list item is clicked */
+
 #content {
     margin: 0 auto;
     width: 40vw;
-    height: 100vh;
+    height: auto;
     background-color: blue;
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 30px;
 }
 
-#content #food1 {
+#content h1 {
+    font-size: 40px;
+}
+
+#content .food-div {
     height: var(--food-box-height);
     border: 5px solid black;
     width: 50%;
 }
 
-#content #food2 {
-    height: var(--food-box-height);
-    border: 5px solid black;
-    width: 50%;
-}
-
-#content #food3 {
-    height: var(--food-box-height);
-    border: 5px solid black;
-    width: 50%;
+.food-div img {
+    width: 100%;
+    height: 100%;
 }
