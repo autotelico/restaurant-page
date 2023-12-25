@@ -1,1 +1,1 @@
-console.log("index.js works");
+document.addEventListener("DOMContentLoaded",(()=>{document.querySelectorAll("[data-tab-target]").forEach((e=>{e.addEventListener("click",(()=>{document.querySelectorAll("[data-tab-content]").forEach((e=>{e.classList.remove("active"),console.log(".active Classes cleared.")})),document.querySelector(e.dataset.tabTarget).classList.add("active"),console.log("the class .active has been added")}))}))}));

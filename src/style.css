@@ -59,6 +59,14 @@ body {
     list-style-type: none;
 }
 
+[data-tab-content] {
+    display: none;
+}
+
+[data-tab-content].active {
+    display: block;
+}
+
 /* There should be content for when a list item is clicked */
 
 #content {
