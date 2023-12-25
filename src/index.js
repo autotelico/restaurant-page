@@ -11,7 +11,8 @@ document.addEventListener("DOMContentLoaded", () => {
             })
 
             const content = document.querySelector(tab.dataset.tabTarget)
-            content.classList.add('active');
+            console.log('here: ' + content.children.textContent);
+            content.children.classList.add('active');
             console.log('the class .active has been added');
         })
     })
