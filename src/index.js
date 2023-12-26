@@ -1,3 +1,7 @@
+import home from './home.js';
+import menu from './menu.js';
+import contact from './contact.js';
+
 document.addEventListener("DOMContentLoaded", () => {
 
     const tabs = document.querySelectorAll('[data-tab-target]');
@@ -11,7 +15,6 @@ document.addEventListener("DOMContentLoaded", () => {
             })
 
             const content = document.querySelector(tab.dataset.tabTarget)
-            console.log('here: ' + content.children.textContent);
             content.classList.add('active');
             console.log('the class .active has been added');
         })
