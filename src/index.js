@@ -1,10 +1,14 @@
 import home from './home.js';
 import menu from './menu.js';
 import contact from './contact.js';
-import "style.css";
-import "meyerReset.css";
+import "./style.css";
+import "./meyerReset.css";
 
 document.addEventListener("DOMContentLoaded", () => {
+
+    home();
+    menu();
+    contact();
 
     const tabs = document.querySelectorAll('[data-tab-target]');
     tabs.forEach(tab => {
@@ -22,7 +26,4 @@ document.addEventListener("DOMContentLoaded", () => {
         })
     })
 
-    home();
-    menu();
-    contact();
 })
