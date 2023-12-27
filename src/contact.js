@@ -33,7 +33,7 @@ export default function() {
     para3.textContent = 'chef@legitdomain.com';
     
     const image1 = document.createElement('img');
-    image1.src = "../src/images/chef.jpg";
+    image1.src = "./images/chef.jpg";
     image1.title = 'The best chef Milan has ever seen!';
 
     descriptionWrap.appendChild(para1);
