@@ -6,7 +6,10 @@ import "./meyerReset.css";
 
 document.addEventListener("DOMContentLoaded", () => {
 
-    
+    home();
+    menu();
+    contact();
+
     const tabs = document.querySelectorAll('[data-tab-target]');
     tabs.forEach(tab => {
         tab.addEventListener('click', () => {
@@ -16,14 +19,11 @@ document.addEventListener("DOMContentLoaded", () => {
                 tabContent.classList.remove('active');
                 console.log('.active Classes cleared.');
             })
-            
+
             const content = document.querySelector(tab.dataset.tabTarget);
             content.classList.add('active');
             console.log('the class .active has been added');
         })
     })
-    
-    home();
-    menu();
-    contact();
+
 })

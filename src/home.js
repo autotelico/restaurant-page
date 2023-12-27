@@ -28,8 +28,11 @@ export default function () {
 
     // Hours
     const hoursDiv = document.createElement('div');
+    const hoursTitle = document.createElement('h3');
+    hoursTitle.textContent = 'Hours';
+    hoursDiv.appendChild(hoursTitle);
     const hours = document.createElement('p');
-    hours.textContent = '2am';
+    hours.textContent = 'asdas';
     hoursDiv.appendChild(hours);
     content.appendChild(hoursDiv);
 }
