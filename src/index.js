@@ -1,10 +1,10 @@
 import home from './home.js';
 import menu from './menu.js';
 import contact from './contact.js';
+import "style.css";
+import "meyerReset.css";
 
 document.addEventListener("DOMContentLoaded", () => {
-
-    const content = document.querySelector('#content');
 
     const tabs = document.querySelectorAll('[data-tab-target]');
     tabs.forEach(tab => {
