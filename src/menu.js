@@ -9,7 +9,7 @@ export default function() {
     const foodDiv1 = document.createElement('div');
     foodDiv1.classList.add('food-div');
     const image1 = document.createElement('img');
-    image1.src = '../src/images/tiramisu.jpg';
+    image1.src = './images/tiramisu.jpg';
     foodDiv1.appendChild(image1);
     const para1 = document.createElement('h2');
     para1.textContent = 'Tiramisu';
@@ -18,7 +18,7 @@ export default function() {
     const foodDiv2 = document.createElement('div');
     foodDiv2.classList.add('food-div');
     const image2 = document.createElement('img');
-    image2.src = '../src/images/pizza-napoletana.jpg';
+    image2.src = './images/pizza-napoletana.jpg';
     foodDiv2.appendChild(image2);
     const para2 = document.createElement('h2');
     para2.textContent = 'Pizza Napoletana';
@@ -27,7 +27,7 @@ export default function() {
     const foodDiv3 = document.createElement('div');
     foodDiv3.classList.add('food-div');
     const image3 = document.createElement('img');
-    image3.src = '../src/images/spaghetti-alla-carbonara.jpg';
+    image3.src = './images/spaghetti-alla-carbonara.jpg';
     foodDiv3.appendChild(image3);
     const para3 = document.createElement('h2');
     para3.textContent = 'Spaghetti alla Carbonara';
