@@ -57,7 +57,5 @@ export default function () {
     hoursList.appendChild(day6);
     hoursList.appendChild(day7);
     hoursDiv.appendChild(hoursList);
-    // hours.textContent = 'asdas';
-    // hoursDiv.appendChild(hours);
     content.appendChild(hoursDiv);
 }

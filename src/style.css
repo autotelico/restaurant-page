@@ -88,7 +88,7 @@ body {
     align-items: center;
 }
 
-#content div:not(#home, #menu, #contact) {
+#content div:not(#home, #menu, #contact, .title) {
     background-color: #fff;
     color: black;
 }
@@ -104,7 +104,10 @@ body {
 }
 
 #content #menu h2 {
-    background-color: lightgreen; 
+    background-color: darkgoldenrod; 
+    border-radius: 15px;
+    position: relative;
+    top: 15px;
 }
 
 #content h3 {
@@ -135,6 +138,7 @@ body {
 }
 
 .title {
+    background-color: lightcoral;
     border: 5px solid black;
     border-radius: 15px;
     height: 100px;
@@ -159,6 +163,10 @@ body {
 
 #content div:not(:first-child){
     margin-top: 90px;
+}
+
+#home {
+    padding: 20px 0;
 }
 
 #home #commendation {

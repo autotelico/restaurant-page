@@ -34,7 +34,7 @@ export default function() {
     
     const image1 = document.createElement('img');
     image1.src = "../src/images/chef.jpg";
-    image1.title = 'The best chef Milan has ever seen!'
+    image1.title = 'The best chef Milan has ever seen!';
 
     descriptionWrap.appendChild(para1);
     descriptionWrap.appendChild(para2);
