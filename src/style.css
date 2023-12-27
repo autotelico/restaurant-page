@@ -1,6 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Hedvig+Letters+Sans&family=Roboto+Slab:wght@300&display=swap');
+
 :root {
     --food-box-height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Hedvig Letters Sans', sans-serif;
+    font-family: 'Roboto Slab', serif;
 }
 
 ::-webkit-scrollbar {
@@ -9,11 +12,11 @@
 
 ::-webkit-scrollbar-thumb {
     border-radius: 15px;
-    background-color: #ddd;
+    background-color: #ffd700;
 }
 
 ::-webkit-scrollbar-track {
-    background-color: rgba(7, 216, 7, 0.692);
+    background-color: #333;
 }
 
 body {
@@ -73,17 +76,16 @@ body {
 /* There should be content for when a list item is clicked */
 
 #content {
-    color: #fff;
+    color: #000;
     font-size: 20px;
     margin: 0 auto;
-    padding-top: 30px;
+    padding-top: 10px;
     width: 900px;
-    height: 1200px;
+    height: max-content;
     background-color: rgba(190, 190, 190, 0.7);
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 200px;
 }
 
 #content div:not(#home, #menu, #contact) {
@@ -98,6 +100,11 @@ body {
 #content h2 {
     font-weight: bold;
     font-size: 60px;
+    text-align: center;
+}
+
+#content #menu h2 {
+    background-color: lightgreen; 
 }
 
 #content h3 {
@@ -105,7 +112,7 @@ body {
     font-size: 40px;
 }
 
-#content p {
+#content p:not(#menu p) {
     margin-top: 20px;
 }
 
@@ -148,4 +155,58 @@ body {
 
 #location p {
     text-align: center;
+}
+
+#content div:not(:first-child){
+    margin-top: 90px;
+}
+
+#home #commendation {
+    font-style: italic;
+    line-height: 2rem;
+}
+
+#commendation #author-name {
+    font-weight: bold;
+}
+
+#home div:last-child {
+    line-height: 1.8rem;
+}
+
+#menu {
+    padding-bottom: 10px;
+    height: 1500px;
+}
+
+#menu #menu-intro {
+    background-color: #fff;
+    color: black;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+#contact {
+    height: 1000px;
+}
+
+#contact .description {
+    position: relative;
+}
+
+#contact .hoverable {
+    cursor: pointer;
+}
+
+#contact img {
+    position: relative;
+    height: 200px;
+    width: 200px;
+    right: 0;
+}
+
+#contact #contact-div {
+    display: grid;
+    grid-template: 1fr / 1fr 1fr;
 }
