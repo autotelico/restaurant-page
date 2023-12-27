@@ -4,6 +4,8 @@ import contact from './contact.js';
 
 document.addEventListener("DOMContentLoaded", () => {
 
+    const content = document.querySelector('#content');
+
     const tabs = document.querySelectorAll('[data-tab-target]');
     tabs.forEach(tab => {
         tab.addEventListener('click', () => {
@@ -14,11 +16,13 @@ document.addEventListener("DOMContentLoaded", () => {
                 console.log('.active Classes cleared.');
             })
 
-            const content = document.querySelector(tab.dataset.tabTarget)
+            const content = document.querySelector(tab.dataset.tabTarget);
             content.classList.add('active');
             console.log('the class .active has been added');
         })
     })
 
-
+    home();
+    menu();
+    contact();
 })

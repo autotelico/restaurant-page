@@ -31,7 +31,7 @@ body {
     font-size: 48px;
 }
 
-#header .header-option {
+#header .tab {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -42,7 +42,7 @@ body {
     transition: .4s background-color;
 }
 
-#header .header-option:hover {
+#header .tab:hover {
     background-color: lightgreen;
     transition: .4s all;
 }
@@ -86,11 +86,6 @@ body {
     gap: 200px;
 }
 
-#content h2 {
-    font-weight: bold;
-    font-size: 24px;
-}
-
 #content div:not(#home, #menu, #contact) {
     background-color: #fff;
     color: black;
@@ -98,6 +93,11 @@ body {
 
 #content h1 {
     text-align: center;
+}
+
+#content h2 {
+    font-weight: bold;
+    font-size: 60px;
 }
 
 #content p {
@@ -137,7 +137,6 @@ body {
     padding: 20px;
     border: 5px solid black;
     border-radius: 15px;
-    margin-top: 10px;
     width: 500px;
     height: max-content;
 }

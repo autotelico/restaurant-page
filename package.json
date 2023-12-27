@@ -12,6 +12,7 @@
   "author": "Henrique Heron <henriqueheronhh@gmail.com>",
   "license": "ISC",
   "devDependencies": {
+    "inline-source-map": "^0.6.2",
     "webpack": "^5.89.0",
     "webpack-cli": "^5.1.4"
   }
