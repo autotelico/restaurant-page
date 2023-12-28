@@ -46,7 +46,7 @@ body {
 }
 
 #header .tab:hover {
-    background-color: lightgreen;
+    background-color: rgba(144, 238, 144, 0.726);
     transition: .4s all;
 }
 
@@ -63,11 +63,18 @@ body {
 
 #header li {
     list-style-type: none;
+    user-select: none;
+}
+
+.tab.active {
+    background-color: lightgreen !important;
+
 }
 
 [data-tab-content] {
     display: none;
 }
+
 
 [data-tab-content].active {
     display: block;
@@ -218,3 +225,4 @@ body {
     display: grid;
     grid-template: 1fr / 1fr 1fr;
 }
+
